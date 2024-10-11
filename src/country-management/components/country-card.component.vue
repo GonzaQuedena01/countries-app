@@ -13,22 +13,26 @@ const props = defineProps({
   }
 });
 
-const sortedCapitals = props.country.capital.sort((a, b) => a.length - b.length);
+const capitals = props.country.capital ?
+    (Array.isArray(props.country.capital) ? props.country.capital : [props.country.capital]) : [];
+
+const sortedCapitals = capitals.sort((a, b) => a.length - b.length);
 
 </script>
 
 <template>
   <div class="card border border-gray-300 rounded p-3 bg-gray-100 flex flex-col gap-3">
 
-    <div class="card__image ">
+    <div class="card__image">
       <img class="w-full h-40"
-           :src="props.country.flags.png" :alt="props.country.flags.alt"/>
+           :src="props.country.flags.png"
+           :alt="props.country.flags.alt"/>
     </div>
 
-    <h4 class="text-xl font-bold text-gray-600">{{ props.country.name}}</h4>
+    <h4 class="text-xl font-bold text-gray-600">{{ props.country.name }}</h4>
 
     <div class="text-sm text-gray-400">
-      <span v-if="props.country.capital.length > 1">Capitales:</span>
+      <span v-if="sortedCapitals.length > 1">Capitales:</span>
       <span v-else>Capital:</span>
       <ul>
         <li v-for="capital in sortedCapitals" :key="capital" class="font-bold">{{ capital }}</li>
@@ -46,5 +50,4 @@ const sortedCapitals = props.country.capital.sort((a, b) => a.length - b.length)
 </template>
 
 <style scoped>
-
 </style>
