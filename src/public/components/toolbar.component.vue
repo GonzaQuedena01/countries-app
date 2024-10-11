@@ -36,7 +36,7 @@ export default {
       </a>
 
       <ul class="dropdown bg-sky-700 absolute right-0 top-0 bottom-0 w-[65%] max-w-[300px]
-        p-4 flex gap-6 items-center" id="menu">
+        p-4 flex flex-col gap-6 justify-center" id="menu">
 
         <li class="dropdown__list">
           <router-link to="/" class="dropdown__link">
