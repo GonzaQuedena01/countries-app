@@ -9,7 +9,7 @@ export default {
     <div class="nav__container w-[90%] mx-auto h-[70px] grid grid-cols-[max-content_max-content]
       justify-between items-center overflow-hidden">
 
-      <span class="nav__title text-2xl font-bold text-white">
+      <span class="nav__title text-2xl tracking-widest font-bold text-white">
       Countries App
       </span>
 
@@ -103,6 +103,7 @@ export default {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
+  letter-spacing: 0.1em;
 }
 
 </style>
