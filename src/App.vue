@@ -1,5 +1,5 @@
 <script setup>
-import toolbar from './public/components/Toolbar.vue'
+import toolbar from './public/components/toolbar.component.vue'
 
 </script>
 

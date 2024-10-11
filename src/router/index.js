@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeComponent  from '../public/pages/Home.vue'
-import CountryOverviewComponent from "../country-management/pages/CountryOverview.vue";
+import CountryOverviewComponent from "../country-management/pages/country-overview.component.vue";
 
 const routes = [
     { path: '/home', name: 'home', component: HomeComponent, meta: { title: 'Home'} },
