@@ -13,10 +13,16 @@ export default {
       Countries App
       </span>
 
-      <ul class="dropdown__main hidden md:block">
+      <ul class="dropdown__main hidden md:flex gap-6">
         <li class="dropdown__list">
           <router-link to="/" class="dropdown__link">
             <span class="dropdown__span">Home</span>
+          </router-link>
+        </li>
+
+        <li class="dropdown__list">
+          <router-link to="/countries" class="dropdown__link">
+            <span class="dropdown__span">Countries</span>
           </router-link>
         </li>
       </ul>
@@ -35,6 +41,12 @@ export default {
         <li class="dropdown__list">
           <router-link to="/" class="dropdown__link">
             <span class="dropdown__span">Home</span>
+          </router-link>
+        </li>
+
+        <li class="dropdown__list">
+          <router-link to="/countries" class="dropdown__link">
+            <span class="dropdown__span">Countries</span>
           </router-link>
         </li>
       </ul>
