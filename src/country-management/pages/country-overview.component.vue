@@ -14,7 +14,7 @@ const _buildCountryFromApiResponse = (response) => {
       name: country.name.common,
       capital: country.capital,
       cca3: country.cca3,
-      flags: { alt: country.name.common, src: country.flags.png }
+      flags: { alt: country.name.common, png: country.flags.png }
     });
   });
 }
