@@ -5,19 +5,27 @@ export default {
 </script>
 
 <template>
-  <nav class="nav bg-sky-700">
+  <nav class="nav bg-sky-700 p-4">
     <div class="nav__container w-[90%] mx-auto h-[70px] grid grid-cols-[max-content_max-content]
       justify-between items-center overflow-hidden">
 
-      <span class="nav__title text-xl font-bold text-white">
+      <span class="nav__title text-2xl font-bold text-white">
       Countries App
       </span>
 
-      <a href="#menu" class="nav__menu">
+      <ul class="dropdown__main hidden md:block">
+        <li class="dropdown__list">
+          <router-link to="/" class="dropdown__link">
+            <span class="dropdown__span">Home</span>
+          </router-link>
+        </li>
+      </ul>
+
+      <a href="#menu" class="nav__menu md:hidden">
         <img src="../../assets/img/menu.svg" class="nav__icon" alt="menu-icon"/>
       </a>
 
-      <a href="#" class="nav__menu nav__menu--second">
+      <a href="#" class="nav__menu nav__menu--second md:hidden">
         <img src="../../assets/img/close.svg" class="nav__icon" alt="close-icon"/>
       </a>
 
