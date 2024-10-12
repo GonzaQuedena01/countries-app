@@ -8,7 +8,7 @@
     <div class="home__container w-[90%] mx-auto flex items-center mt-20 flex-col gap-10">
 
       <h1 class="home__title text-4xl md:text-5xl lg:text-6xl text-center font-bold text-sky-700">
-        Welcome to Countries App
+        Welcome to Terra Explorer
       </h1>
 
       <img src="https://cdn.pixabay.com/photo/2016/04/01/22/55/countries-1301799_1280.png" alt="world-map"

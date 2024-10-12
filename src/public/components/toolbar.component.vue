@@ -10,7 +10,7 @@ export default {
       justify-between items-center overflow-hidden">
 
       <span class="nav__title text-2xl tracking-widest font-bold text-white">
-      Countries App
+      Terra Explorer
       </span>
 
       <ul class="dropdown__main hidden md:flex gap-6">

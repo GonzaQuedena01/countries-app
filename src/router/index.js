@@ -17,7 +17,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-    let baseTitle = 'Country App';
+    let baseTitle = 'Terra Explorer';
     document.title = `${baseTitle} | ${to.meta['title']}`;
     next();
 });
