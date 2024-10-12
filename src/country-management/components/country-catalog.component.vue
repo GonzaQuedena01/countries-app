@@ -16,7 +16,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-20">
+  <div class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
     <country-card v-for="country in props.countries" :key="country.name" :country="country"/>
   </div>
 </template>

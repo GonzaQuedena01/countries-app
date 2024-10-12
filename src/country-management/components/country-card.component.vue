@@ -32,7 +32,7 @@ const sortedCapitals = capitals.sort((a, b) => a.length - b.length);
     <h4 class="text-xl font-bold text-gray-600">{{ props.country.name }}</h4>
 
     <div class="text-sm text-gray-400">
-      <span v-if="sortedCapitals.length > 1">Capitales:</span>
+      <span v-if="sortedCapitals.length > 1">Capitals:</span>
       <span v-else>Capital:</span>
       <ul>
         <li v-for="capital in sortedCapitals" :key="capital" class="font-bold">{{ capital }}</li>
