@@ -48,7 +48,7 @@ const _filterCountries = () => {
   });
 }
 
-const paginatedCountries = computed(() => {
+const _paginatedCountries = computed(() => {
   const start = (currentPage.value - 1) * itemsPerPage.value;
   const end = start + itemsPerPage.value;
   return filteredCountries.value.slice(start, end);
@@ -80,7 +80,7 @@ onMounted(() => {
     <paginator-button :current-page="currentPage" :total-items="filteredCountries.length"
                       :items-per-page="itemsPerPage" @previous="previousPage" @next="nextPage"/>
 
-    <country-catalog :countries="paginatedCountries"/>
+    <country-catalog :countries="_paginatedCountries"/>
   </div>
 </template>
 
